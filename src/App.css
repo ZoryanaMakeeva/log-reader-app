@@ -1,0 +1,174 @@
+#root {
+    text-align: center
+}
+
+body {
+    margin-top: 1.0em;
+    background-color: #ffffff;
+    font-family: 'Istok Web', Helvetica, Arial, FreeSans, sans-serif;
+    color: #000000;
+}
+
+.app {
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 10px 40px 40px;
+    border-radius: 5px;
+}
+
+.app-title {
+    font-size: 4em;
+    color: #3e5763;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    font-family: 'Maven Pro', Helvetica;
+    font-weight: normal;
+}
+
+.app-description {
+    font-size: 1.3em;
+    font-family: 'Muli', Helvetica;
+    color: #3e5763;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 30px;
+    width: 50%;
+    margin: 30px auto
+}
+
+.intro {
+    font-size: 1.5em;
+    color: #3e5763;
+}
+
+.form-label {
+    width: 337px;
+    display: inline-block;
+    font-size: 12pt;
+}
+
+label {
+    margin: 0 5px 0 0;
+}
+
+.file-upload {
+color: transparent;
+font-size: 12pt;
+}
+
+.file-upload::-webkit-file-upload-button {
+    outline: none;
+    padding: 4px;
+    border: solid 1px #AACFE4;
+    width: 332px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 1;
+    margin: 10px 0 20px 0;
+}
+
+.search-input,
+.time-filter-from,
+.time-filter-to {
+    outline: none;
+    padding: 2px;
+    border: solid 1px #AACFE4;
+    width: 316px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    font-size: 17px;
+    line-height: 1;
+    margin: 0 0 25px 0;
+}
+
+.search-input {
+    height: 35px;
+}
+
+input[type=search] {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+
+.file-upload,
+.search-input {
+    width: 332px;
+}
+
+#filterDateFrom,
+#filterDateTo {
+    margin: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-data {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+.log-text {
+    width: 40%;
+    text-align: left;
+    word-break: break-word;
+}
+
+.table-row:hover {
+    background-color: #eaeaea;
+}
+
+.type-of-log-filter {
+    margin-bottom: 30px;
+}
+
+.common-log-filter {
+    margin-right: 85px;
+}
+
+.time-filter {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.time-filter-from {
+    margin-right: 25px;
+}
+
+.common-log-filter,
+.browser-log-filter {
+    font-size: 17px;
+}
+
+.center {
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    color: black;
+    background-color: white;
+    opacity: 0.9;
+    border: 1px solid #ddd;
+}
+
+.ReactTable .rt-td {
+    white-space: pre-line !important;
+    text-align: left;
+    word-break: break-word;
+}
+
+/*.ReactTable .rt-thead {*/
+    /*overflow-y: scroll;*/
+/*}*/
+
+
+
+
