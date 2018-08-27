@@ -49,30 +49,30 @@ export class SearchBar extends React.Component {
                         Only show common logs
                     </span>
                     <span className='browser-log-filter'>
-                    <input type='checkbox'
-                           checked={this.props.browserOnly}
-                           onChange={this.handleBrowserOnlyChange}/>
+                        <input type='checkbox'
+                               checked={this.props.browserOnly}
+                               onChange={this.handleBrowserOnlyChange}/>
                         {' '}
                         Only show browser logs
                     </span>
                 </div>
                 <div className='time-filter'>
-                <span>
-                    From
-                    {' '}
-                    <input type='datetime-local'
-                           value={this.props.pickedDateFrom}
-                           onChange={this.handleDateStartChange}
-                           className='time-filter-from'/>
-                </span>
                     <span>
-                    To
+                        From
+                        {' '}
+                        <input type='datetime-local'
+                               value={this.props.pickedDateFrom}
+                               onChange={this.handleDateStartChange}
+                               className='time-filter-from'/>
+                    </span>
+                    <span>
+                        To
                         {' '}
                         <input type='datetime-local'
                                value={this.props.pickedDateTo}
                                onChange={this.handleDateEndChange}
                                className='time-filter-to'/>
-                </span>
+                    </span>
                 </div>
             </form>
         );

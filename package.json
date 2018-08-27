@@ -12,7 +12,8 @@
     "react-table": "^6.8.6",
     "react-virtualized": "^9.20.1",
     "redux": "latest",
-    "react-redux": "latest"
+    "react-redux": "latest",
+    "redux-thunk": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

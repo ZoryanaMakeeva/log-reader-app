@@ -102,28 +102,6 @@ input[type=search] {
     margin: 15px;
 }
 
-table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.table-data {
-    border: 1px solid #ddd;
-    padding: 5px;
-    text-align: center;
-}
-
-.log-text {
-    width: 40%;
-    text-align: left;
-    word-break: break-word;
-}
-
-.table-row:hover {
-    background-color: #eaeaea;
-}
-
 .type-of-log-filter {
     margin-bottom: 30px;
 }
@@ -150,25 +128,11 @@ table {
     text-align: center;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    color: black;
-    background-color: white;
-    opacity: 0.9;
-    border: 1px solid #ddd;
-}
-
 .ReactTable .rt-td {
     white-space: pre-line !important;
     text-align: left;
     word-break: break-word;
 }
-
-/*.ReactTable .rt-thead {*/
-    /*overflow-y: scroll;*/
-/*}*/
-
 
 
 

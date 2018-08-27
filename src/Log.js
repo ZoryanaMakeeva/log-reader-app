@@ -6,7 +6,7 @@ export class Log {
         this.text = text;
         this.name = name;
         this.type = this.name.includes('browser') ? 'BROWSER' : 'COMMON';
-        this.common = this.name.includes('common') ? this.text : '';
-        this.browser = this.name.includes('browser') ? this.text : '';
+        this.common = this.type === 'COMMON' ? this.text : '';
+        this.browser = this.type === 'BROWSER' ? this.text : '';
     }
 }

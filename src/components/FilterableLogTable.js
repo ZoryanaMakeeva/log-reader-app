@@ -1,10 +1,9 @@
 import React from "react";
-import {getPromisesForLogs, matchFilters} from "../utils";
+import {getPromisesForLogs} from "../utils";
 import {getInitialDate} from "../utils";
 import {SearchBar} from "./SearchBar";
-import {LogTable} from "./LogTable1";
+import {LogTable} from "./LogTable";
 import {LoadingSpinner} from './LoadingSpinner'
-import {LogRow} from "./LogRow";
 
 export class FilterableLogTable extends React.Component {
     constructor(props) {
@@ -31,13 +30,9 @@ export class FilterableLogTable extends React.Component {
     }
 
     handleFilterTextChange(filterText) {
-
-        this.setState({loading: true}, () => {
-            this.setState({
-                filterText: filterText,
-                loading: false
-            })
-        });
+        this.setState({
+            filterText: filterText,
+        })
     }
 
     handleCommonOnlyChange(commonOnly) {
@@ -69,7 +64,7 @@ export class FilterableLogTable extends React.Component {
             getPromisesForLogs(zipFiles)
                 .then(allLogs => {
                     let logs = allLogs.reduce((acum, current) => acum.concat(current))
-                        .sort((a, b) => a.millitime - b.millitime);
+                                      .sort((a, b) => a.millitime - b.millitime);
                     this.setState({
                         logContainer: logs,
                         pickedDateFrom: getInitialDate(logs, 0),
@@ -103,13 +98,13 @@ export class FilterableLogTable extends React.Component {
                     onDateStartChange={this.handleDateStartChange}
                     onDateEndChange={this.handleDateEndChange}/>
                 {loading ? <LoadingSpinner/> : logs.length > 0 &&
-                    <LogTable
-                        logs={logs}
-                        filterText={this.state.filterText}
-                        commonOnly={this.state.commonOnly}
-                        browserOnly={this.state.browserOnly}
-                        pickedDateFrom={this.state.pickedDateFrom}
-                        pickedDateTo={this.state.pickedDateTo}/>
+                <LogTable
+                    logs={logs}
+                    filterText={this.state.filterText}
+                    commonOnly={this.state.commonOnly}
+                    browserOnly={this.state.browserOnly}
+                    pickedDateFrom={this.state.pickedDateFrom}
+                    pickedDateTo={this.state.pickedDateTo}/>
                 }
             </div>
         )
